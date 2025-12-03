@@ -76,7 +76,7 @@ export default function ManagerDashboard() {
           {meals.map((m, index) => (
             <tr key={index}>
               <td>{m.user_name}</td>
-              <td>{m.date.split('-').reverse().join('/')}</td>
+              <td>{m.date}</td>
               <td>{m.mealTypes.join(', ')}</td>
             </tr>
           ))}

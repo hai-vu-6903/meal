@@ -73,7 +73,7 @@ export default function SoldierDashboard() {
         <tbody>
           {meals.map((m) => (
             <tr key={m.date}>
-              <td>{m.date.split('-').reverse().join('/')}</td> {/* dd/mm/yyyy */}
+              <td>{m.date}</td>
               <td>{m.mealTypes.join(', ')}</td>
             </tr>
           ))}
